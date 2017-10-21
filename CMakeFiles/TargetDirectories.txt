@@ -1,2 +1,3 @@
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/find.dir
+/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/perimeter.dir
+/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/region.dir
 /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/view.dir

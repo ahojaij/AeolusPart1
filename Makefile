@@ -99,17 +99,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named find
+# Target rules for targets named perimeter
 
 # Build rule for target.
-find: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 find
-.PHONY : find
+perimeter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 perimeter
+.PHONY : perimeter
 
 # fast build rule for target.
-find/fast:
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/build
-.PHONY : find/fast
+perimeter/fast:
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/build
+.PHONY : perimeter/fast
+
+#=============================================================================
+# Target rules for targets named region
+
+# Build rule for target.
+region: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 region
+.PHONY : region
+
+# fast build rule for target.
+region/fast:
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/build
+.PHONY : region/fast
 
 #=============================================================================
 # Target rules for targets named view
@@ -124,12 +137,36 @@ view/fast:
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/build
 .PHONY : view/fast
 
+FIND_PERIMETER.o: FIND_PERIMETER.cpp.o
+.PHONY : FIND_PERIMETER.o
+
+# target to build an object file
+FIND_PERIMETER.cpp.o:
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/FIND_PERIMETER.cpp.o
+.PHONY : FIND_PERIMETER.cpp.o
+
+FIND_PERIMETER.i: FIND_PERIMETER.cpp.i
+.PHONY : FIND_PERIMETER.i
+
+# target to preprocess a source file
+FIND_PERIMETER.cpp.i:
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/FIND_PERIMETER.cpp.i
+.PHONY : FIND_PERIMETER.cpp.i
+
+FIND_PERIMETER.s: FIND_PERIMETER.cpp.s
+.PHONY : FIND_PERIMETER.s
+
+# target to generate assembly for a file
+FIND_PERIMETER.cpp.s:
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/FIND_PERIMETER.cpp.s
+.PHONY : FIND_PERIMETER.cpp.s
+
 FIND_REGION.o: FIND_REGION.cpp.o
 .PHONY : FIND_REGION.o
 
 # target to build an object file
 FIND_REGION.cpp.o:
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/FIND_REGION.cpp.o
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/FIND_REGION.cpp.o
 .PHONY : FIND_REGION.cpp.o
 
 FIND_REGION.i: FIND_REGION.cpp.i
@@ -137,7 +174,7 @@ FIND_REGION.i: FIND_REGION.cpp.i
 
 # target to preprocess a source file
 FIND_REGION.cpp.i:
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/FIND_REGION.cpp.i
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/FIND_REGION.cpp.i
 .PHONY : FIND_REGION.cpp.i
 
 FIND_REGION.s: FIND_REGION.cpp.s
@@ -145,7 +182,7 @@ FIND_REGION.s: FIND_REGION.cpp.s
 
 # target to generate assembly for a file
 FIND_REGION.cpp.s:
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/FIND_REGION.cpp.s
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/FIND_REGION.cpp.s
 .PHONY : FIND_REGION.cpp.s
 
 view.o: view.cpp.o
@@ -179,9 +216,13 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... find"
+	@echo "... perimeter"
 	@echo "... rebuild_cache"
+	@echo "... region"
 	@echo "... view"
+	@echo "... FIND_PERIMETER.o"
+	@echo "... FIND_PERIMETER.i"
+	@echo "... FIND_PERIMETER.s"
 	@echo "... FIND_REGION.o"
 	@echo "... FIND_REGION.i"
 	@echo "... FIND_REGION.s"

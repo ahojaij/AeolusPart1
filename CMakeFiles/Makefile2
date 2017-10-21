@@ -53,38 +53,73 @@ CMAKE_SOURCE_DIR = /home/abdullah/CCPP/AeolusRobotics/Part1
 CMAKE_BINARY_DIR = /home/abdullah/CCPP/AeolusRobotics/Part1
 
 #=============================================================================
-# Target rules for target CMakeFiles/find.dir
+# Target rules for target CMakeFiles/perimeter.dir
 
 # All Build rule for target.
-CMakeFiles/find.dir/all:
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/depend
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/build
+CMakeFiles/perimeter.dir/all:
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/depend
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  1
-	@echo "Built target find"
-.PHONY : CMakeFiles/find.dir/all
+	@echo "Built target perimeter"
+.PHONY : CMakeFiles/perimeter.dir/all
 
 # Include target in all.
-all: CMakeFiles/find.dir/all
+all: CMakeFiles/perimeter.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/find.dir/rule: cmake_check_build_system
+CMakeFiles/perimeter.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/find.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/perimeter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 0
-.PHONY : CMakeFiles/find.dir/rule
+.PHONY : CMakeFiles/perimeter.dir/rule
 
 # Convenience name for target.
-find: CMakeFiles/find.dir/rule
-.PHONY : find
+perimeter: CMakeFiles/perimeter.dir/rule
+.PHONY : perimeter
 
 # clean rule for target.
-CMakeFiles/find.dir/clean:
-	$(MAKE) -f CMakeFiles/find.dir/build.make CMakeFiles/find.dir/clean
-.PHONY : CMakeFiles/find.dir/clean
+CMakeFiles/perimeter.dir/clean:
+	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/clean
+.PHONY : CMakeFiles/perimeter.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/find.dir/clean
+clean: CMakeFiles/perimeter.dir/clean
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/region.dir
+
+# All Build rule for target.
+CMakeFiles/region.dir/all:
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/depend
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  2
+	@echo "Built target region"
+.PHONY : CMakeFiles/region.dir/all
+
+# Include target in all.
+all: CMakeFiles/region.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/region.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/region.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 0
+.PHONY : CMakeFiles/region.dir/rule
+
+# Convenience name for target.
+region: CMakeFiles/region.dir/rule
+.PHONY : region
+
+# clean rule for target.
+CMakeFiles/region.dir/clean:
+	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/clean
+.PHONY : CMakeFiles/region.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/region.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -94,7 +129,7 @@ clean: CMakeFiles/find.dir/clean
 CMakeFiles/view.dir/all:
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/depend
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  3
 	@echo "Built target view"
 .PHONY : CMakeFiles/view.dir/all
 
