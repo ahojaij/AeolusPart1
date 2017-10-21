@@ -6,7 +6,7 @@
 
 using namespace cv;
 
-void find_perimeter_mat(int** perimeter, int** region, cv::Mat &mat);
+void find_perimeter_mat(int** perimeter, int** region, cv::Mat &mat, int threshold);
 
 int main(int argc, char **argv) {
     if (argc != 6) {
@@ -64,7 +64,7 @@ int main(int argc, char **argv) {
 		}
 	}
     cv::Mat imageCopyPerimeter = image.clone();
-    find_perimeter_mat(perimeter, region, imageCopyRegion);
+    find_perimeter_mat(perimeter, region, imageCopyRegion, 2);
     show_mat(imageCopyRegion, "OutputPerimeter");
 
     imwrite(argv[5], imageCopyRegion);
@@ -72,7 +72,7 @@ int main(int argc, char **argv) {
     return 0;
 }
 
-void find_perimeter_mat(int** perimeter, int** region, cv::Mat &mat) {
+void find_perimeter_mat(int** perimeter, int** region, cv::Mat &mat, int threshold) {
     int nRows = mat.rows;
     int nCols = mat.cols;
     int topBorder = 0;
@@ -85,7 +85,23 @@ void find_perimeter_mat(int** perimeter, int** region, cv::Mat &mat) {
 		{
 		    if (region[i][j] == 1 && i > 0 && i < nRows && j > 0 && j < nCols)
 		    	{
-			    if (region[i - 1][j] + region[i + 1][j] + region[i][j - 1] + region[i][j + 1] < 4)
+			    int countLeft = 0;
+			    int countRight = 0;
+			    int countTop = 0;
+			    int countBottom = 0;
+			    for (int t = 0; t <= threshold; t++)
+				{
+				    if (i > (t + 1) && region[i - (t + 1)][j] == 1)
+				        countLeft ++;
+				    if (i < nRows - (t + 1) && region[i + (t + 1)][j] == 1)
+				        countRight ++;
+				    if (j > (t + 1) && region[i][j - (t + 1)] == 1)
+				        countBottom ++;
+				    if (j < nCols - (t + 1) && region[i][j + (t + 1)] == 1)
+				        countTop ++;
+				    
+				}
+			    if (countLeft == 0 || countRight == 0 || countBottom == 0 || countTop == 0)
 			    	{
 				    perimeter[i][j] = 1;
 				    node[j][0] = 255;
