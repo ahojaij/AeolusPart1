@@ -99,6 +99,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named displayimage
+
+# Build rule for target.
+displayimage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 displayimage
+.PHONY : displayimage
+
+# fast build rule for target.
+displayimage/fast:
+	$(MAKE) -f CMakeFiles/displayimage.dir/build.make CMakeFiles/displayimage.dir/build
+.PHONY : displayimage/fast
+
+#=============================================================================
 # Target rules for targets named perimeter
 
 # Build rule for target.
@@ -136,6 +149,30 @@ view: cmake_check_build_system
 view/fast:
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/build
 .PHONY : view/fast
+
+DISPLAY_IMAGE.o: DISPLAY_IMAGE.cpp.o
+.PHONY : DISPLAY_IMAGE.o
+
+# target to build an object file
+DISPLAY_IMAGE.cpp.o:
+	$(MAKE) -f CMakeFiles/displayimage.dir/build.make CMakeFiles/displayimage.dir/DISPLAY_IMAGE.cpp.o
+.PHONY : DISPLAY_IMAGE.cpp.o
+
+DISPLAY_IMAGE.i: DISPLAY_IMAGE.cpp.i
+.PHONY : DISPLAY_IMAGE.i
+
+# target to preprocess a source file
+DISPLAY_IMAGE.cpp.i:
+	$(MAKE) -f CMakeFiles/displayimage.dir/build.make CMakeFiles/displayimage.dir/DISPLAY_IMAGE.cpp.i
+.PHONY : DISPLAY_IMAGE.cpp.i
+
+DISPLAY_IMAGE.s: DISPLAY_IMAGE.cpp.s
+.PHONY : DISPLAY_IMAGE.s
+
+# target to generate assembly for a file
+DISPLAY_IMAGE.cpp.s:
+	$(MAKE) -f CMakeFiles/displayimage.dir/build.make CMakeFiles/displayimage.dir/DISPLAY_IMAGE.cpp.s
+.PHONY : DISPLAY_IMAGE.cpp.s
 
 FIND_PERIMETER.o: FIND_PERIMETER.cpp.o
 .PHONY : FIND_PERIMETER.o
@@ -215,11 +252,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... displayimage"
 	@echo "... edit_cache"
 	@echo "... perimeter"
 	@echo "... rebuild_cache"
 	@echo "... region"
 	@echo "... view"
+	@echo "... DISPLAY_IMAGE.o"
+	@echo "... DISPLAY_IMAGE.i"
+	@echo "... DISPLAY_IMAGE.s"
 	@echo "... FIND_PERIMETER.o"
 	@echo "... FIND_PERIMETER.i"
 	@echo "... FIND_PERIMETER.s"
