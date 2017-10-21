@@ -15,4 +15,16 @@ iostream
 -
 cmath
 -
+operations.h
+/home/abdullah/CCPP/AeolusRobotics/Part1/operations.h
+
+/home/abdullah/CCPP/AeolusRobotics/Part1/operations.h
+stdio.h
+-
+opencv2/opencv.hpp
+-
+iostream
+-
+cmath
+-
 

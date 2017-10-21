@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.8)
 project( view )
 find_package( OpenCV REQUIRED )
 add_executable( view view.cpp )
-add_executable( find FIND_REGION.cpp )
+add_executable( find FIND_REGION.cpp operations.h)
 target_link_libraries( view ${OpenCV_LIBS} )
 target_link_libraries( find ${OpenCV_LIBS} )
+
