@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/abdullah/CCPP/AeolusRobotics/Part1/FIND_REGION.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+iostream
+-
+
