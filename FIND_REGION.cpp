@@ -7,8 +7,8 @@
 using namespace cv;
 
 int main(int argc, char **argv) {
-    if (argc != 6) {
-        printf("usage: FIND_REGION_Test <Image_Path> <X_Pixel_location> <Y_Pixel_location> <Color_Threshold> <Output_Path>\n");
+    if (argc != 5) {
+        printf("usage: FIND_REGION_Test <Image_Path> <X_Pixel_location> <Y_Pixel_location> <Color_Threshold>\n");
         return -1;
     }
 
@@ -50,7 +50,6 @@ int main(int argc, char **argv) {
     flood_fill_mat(region, image, atoi(argv[2]), atoi(argv[3]), targetColor, replacementColor, atoi(argv[4]));
     show_mat(image, "Output");
 
-    imwrite(argv[5], image);
 
     return 0;
 }

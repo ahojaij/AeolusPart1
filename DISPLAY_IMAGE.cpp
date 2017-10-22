@@ -8,8 +8,8 @@ using namespace cv;
 
 
 int main(int argc, char **argv) {
-    if (argc != 6) {
-        printf("usage: FIND_REGION_Test <Image_Path> <X_Pixel_location> <Y_Pixel_location> <Color_Threshold> <Output_Path>\n");
+    if (argc != 5) {
+        printf("usage: FIND_REGION_Test <Image_Path> <X_Pixel_location> <Y_Pixel_location> <Color_Threshold>\n");
         return -1;
     }
 
@@ -66,7 +66,6 @@ int main(int argc, char **argv) {
     find_perimeter_mat(perimeter, region, imageCopyRegion, 2);
     show_mat(imageCopyRegion, "OutputPerimeter");
 
-    imwrite(argv[5], imageCopyRegion);
 
     return 0;
 }
