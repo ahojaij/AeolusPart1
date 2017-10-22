@@ -1,6 +1,0 @@
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/displayimage.dir
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/displaypixels.dir
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/perimeter.dir
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/region.dir
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/savepixels.dir
-/home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles/view.dir
