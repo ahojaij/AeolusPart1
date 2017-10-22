@@ -151,6 +151,19 @@ region/fast:
 .PHONY : region/fast
 
 #=============================================================================
+# Target rules for targets named savepixels
+
+# Build rule for target.
+savepixels: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 savepixels
+.PHONY : savepixels
+
+# fast build rule for target.
+savepixels/fast:
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/build
+.PHONY : savepixels/fast
+
+#=============================================================================
 # Target rules for targets named view
 
 # Build rule for target.
@@ -259,6 +272,30 @@ FIND_REGION.cpp.s:
 	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/FIND_REGION.cpp.s
 .PHONY : FIND_REGION.cpp.s
 
+SAVE_PIXELS.o: SAVE_PIXELS.cpp.o
+.PHONY : SAVE_PIXELS.o
+
+# target to build an object file
+SAVE_PIXELS.cpp.o:
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/SAVE_PIXELS.cpp.o
+.PHONY : SAVE_PIXELS.cpp.o
+
+SAVE_PIXELS.i: SAVE_PIXELS.cpp.i
+.PHONY : SAVE_PIXELS.i
+
+# target to preprocess a source file
+SAVE_PIXELS.cpp.i:
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/SAVE_PIXELS.cpp.i
+.PHONY : SAVE_PIXELS.cpp.i
+
+SAVE_PIXELS.s: SAVE_PIXELS.cpp.s
+.PHONY : SAVE_PIXELS.s
+
+# target to generate assembly for a file
+SAVE_PIXELS.cpp.s:
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/SAVE_PIXELS.cpp.s
+.PHONY : SAVE_PIXELS.cpp.s
+
 view.o: view.cpp.o
 .PHONY : view.o
 
@@ -295,6 +332,7 @@ help:
 	@echo "... perimeter"
 	@echo "... rebuild_cache"
 	@echo "... region"
+	@echo "... savepixels"
 	@echo "... view"
 	@echo "... DISPLAY_IMAGE.o"
 	@echo "... DISPLAY_IMAGE.i"
@@ -308,6 +346,9 @@ help:
 	@echo "... FIND_REGION.o"
 	@echo "... FIND_REGION.i"
 	@echo "... FIND_REGION.s"
+	@echo "... SAVE_PIXELS.o"
+	@echo "... SAVE_PIXELS.i"
+	@echo "... SAVE_PIXELS.s"
 	@echo "... view.o"
 	@echo "... view.i"
 	@echo "... view.s"

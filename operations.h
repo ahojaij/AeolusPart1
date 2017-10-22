@@ -56,6 +56,7 @@ void find_perimeter_mat(int** perimeter, int** region, cv::Mat &mat, int thresho
 			    int countRight = 0;
 			    int countTop = 0;
 			    int countBottom = 0;
+			    // threshold parameter helps remove outliers
 			    for (int t = 0; t <= threshold; t++)
 				{
 				    if (i > (t + 1) && region[i - (t + 1)][j] == 1)

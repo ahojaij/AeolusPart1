@@ -193,13 +193,48 @@ clean: CMakeFiles/region.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/savepixels.dir
+
+# All Build rule for target.
+CMakeFiles/savepixels.dir/all:
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/depend
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  5
+	@echo "Built target savepixels"
+.PHONY : CMakeFiles/savepixels.dir/all
+
+# Include target in all.
+all: CMakeFiles/savepixels.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/savepixels.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/savepixels.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 0
+.PHONY : CMakeFiles/savepixels.dir/rule
+
+# Convenience name for target.
+savepixels: CMakeFiles/savepixels.dir/rule
+.PHONY : savepixels
+
+# clean rule for target.
+CMakeFiles/savepixels.dir/clean:
+	$(MAKE) -f CMakeFiles/savepixels.dir/build.make CMakeFiles/savepixels.dir/clean
+.PHONY : CMakeFiles/savepixels.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/savepixels.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/view.dir
 
 # All Build rule for target.
 CMakeFiles/view.dir/all:
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/depend
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  6
 	@echo "Built target view"
 .PHONY : CMakeFiles/view.dir/all
 

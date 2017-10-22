@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/abdullah/CCPP/AeolusRobotics/Part1/SAVE_PIXELS.cpp
+stdio.h
+-
+opencv2/opencv.hpp
+-
+iostream
+-
+cmath
+-
+operations.h
+/home/abdullah/CCPP/AeolusRobotics/Part1/operations.h
+
+/home/abdullah/CCPP/AeolusRobotics/Part1/operations.h
+stdio.h
+-
+opencv2/opencv.hpp
+-
+iostream
+-
+cmath
+-
+

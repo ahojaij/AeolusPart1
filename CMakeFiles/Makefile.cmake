@@ -47,5 +47,6 @@ SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/displaypixels.dir/DependInfo.cmake"
   "CMakeFiles/perimeter.dir/DependInfo.cmake"
   "CMakeFiles/region.dir/DependInfo.cmake"
+  "CMakeFiles/savepixels.dir/DependInfo.cmake"
   "CMakeFiles/view.dir/DependInfo.cmake"
   )
