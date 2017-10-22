@@ -9,10 +9,10 @@ Example of using openCV to load and view images
     cmake .
     make
     region test1.png 50 50 10
-    perimeter test1.png 50 50 10
-    displayimage test1.png 50 50 10
+    perimeter test1.png 20 20 10
+    displayimage test1.png 20 20 10
     displaypixels test1.png 50 50 10
-    savepixels test1.png 50 10 region.png perimeter.png
+    savepixels test1.png 100 100 region.png perimeter.png
 
 ## Call format
 

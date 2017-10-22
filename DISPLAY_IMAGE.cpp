@@ -25,7 +25,6 @@ int main(int argc, char **argv) {
 
     Vec3b *node;
     node = image.ptr<Vec3b>(atoi(argv[2]));
-    printf("node[xPixel][yPixel]: %u, %u, %u\n", node[atoi(argv[3])][0], node[atoi(argv[3])][1], node[atoi(argv[3])][2]);
     uchar targetColor [3]; //  = {255, 255, 255};
     // targetColor is the color of pixel at target location
     targetColor[0] = node[atoi(argv[3])][0];
