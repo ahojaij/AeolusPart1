@@ -88,13 +88,48 @@ clean: CMakeFiles/displayimage.dir/clean
 .PHONY : clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/displaypixels.dir
+
+# All Build rule for target.
+CMakeFiles/displaypixels.dir/all:
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/depend
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  2
+	@echo "Built target displaypixels"
+.PHONY : CMakeFiles/displaypixels.dir/all
+
+# Include target in all.
+all: CMakeFiles/displaypixels.dir/all
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/displaypixels.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 1
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/displaypixels.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles 0
+.PHONY : CMakeFiles/displaypixels.dir/rule
+
+# Convenience name for target.
+displaypixels: CMakeFiles/displaypixels.dir/rule
+.PHONY : displaypixels
+
+# clean rule for target.
+CMakeFiles/displaypixels.dir/clean:
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/clean
+.PHONY : CMakeFiles/displaypixels.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/displaypixels.dir/clean
+.PHONY : clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/perimeter.dir
 
 # All Build rule for target.
 CMakeFiles/perimeter.dir/all:
 	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/depend
 	$(MAKE) -f CMakeFiles/perimeter.dir/build.make CMakeFiles/perimeter.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  2
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  3
 	@echo "Built target perimeter"
 .PHONY : CMakeFiles/perimeter.dir/all
 
@@ -129,7 +164,7 @@ clean: CMakeFiles/perimeter.dir/clean
 CMakeFiles/region.dir/all:
 	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/depend
 	$(MAKE) -f CMakeFiles/region.dir/build.make CMakeFiles/region.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  4
 	@echo "Built target region"
 .PHONY : CMakeFiles/region.dir/all
 
@@ -164,7 +199,7 @@ clean: CMakeFiles/region.dir/clean
 CMakeFiles/view.dir/all:
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/depend
 	$(MAKE) -f CMakeFiles/view.dir/build.make CMakeFiles/view.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  4
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/abdullah/CCPP/AeolusRobotics/Part1/CMakeFiles  5
 	@echo "Built target view"
 .PHONY : CMakeFiles/view.dir/all
 

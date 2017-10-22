@@ -44,6 +44,7 @@ SET(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 SET(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/displayimage.dir/DependInfo.cmake"
+  "CMakeFiles/displaypixels.dir/DependInfo.cmake"
   "CMakeFiles/perimeter.dir/DependInfo.cmake"
   "CMakeFiles/region.dir/DependInfo.cmake"
   "CMakeFiles/view.dir/DependInfo.cmake"

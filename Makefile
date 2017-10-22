@@ -112,6 +112,19 @@ displayimage/fast:
 .PHONY : displayimage/fast
 
 #=============================================================================
+# Target rules for targets named displaypixels
+
+# Build rule for target.
+displaypixels: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 displaypixels
+.PHONY : displaypixels
+
+# fast build rule for target.
+displaypixels/fast:
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/build
+.PHONY : displaypixels/fast
+
+#=============================================================================
 # Target rules for targets named perimeter
 
 # Build rule for target.
@@ -173,6 +186,30 @@ DISPLAY_IMAGE.s: DISPLAY_IMAGE.cpp.s
 DISPLAY_IMAGE.cpp.s:
 	$(MAKE) -f CMakeFiles/displayimage.dir/build.make CMakeFiles/displayimage.dir/DISPLAY_IMAGE.cpp.s
 .PHONY : DISPLAY_IMAGE.cpp.s
+
+DISPLAY_PIXELS.o: DISPLAY_PIXELS.cpp.o
+.PHONY : DISPLAY_PIXELS.o
+
+# target to build an object file
+DISPLAY_PIXELS.cpp.o:
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/DISPLAY_PIXELS.cpp.o
+.PHONY : DISPLAY_PIXELS.cpp.o
+
+DISPLAY_PIXELS.i: DISPLAY_PIXELS.cpp.i
+.PHONY : DISPLAY_PIXELS.i
+
+# target to preprocess a source file
+DISPLAY_PIXELS.cpp.i:
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/DISPLAY_PIXELS.cpp.i
+.PHONY : DISPLAY_PIXELS.cpp.i
+
+DISPLAY_PIXELS.s: DISPLAY_PIXELS.cpp.s
+.PHONY : DISPLAY_PIXELS.s
+
+# target to generate assembly for a file
+DISPLAY_PIXELS.cpp.s:
+	$(MAKE) -f CMakeFiles/displaypixels.dir/build.make CMakeFiles/displaypixels.dir/DISPLAY_PIXELS.cpp.s
+.PHONY : DISPLAY_PIXELS.cpp.s
 
 FIND_PERIMETER.o: FIND_PERIMETER.cpp.o
 .PHONY : FIND_PERIMETER.o
@@ -253,6 +290,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... displayimage"
+	@echo "... displaypixels"
 	@echo "... edit_cache"
 	@echo "... perimeter"
 	@echo "... rebuild_cache"
@@ -261,6 +299,9 @@ help:
 	@echo "... DISPLAY_IMAGE.o"
 	@echo "... DISPLAY_IMAGE.i"
 	@echo "... DISPLAY_IMAGE.s"
+	@echo "... DISPLAY_PIXELS.o"
+	@echo "... DISPLAY_PIXELS.i"
+	@echo "... DISPLAY_PIXELS.s"
 	@echo "... FIND_PERIMETER.o"
 	@echo "... FIND_PERIMETER.i"
 	@echo "... FIND_PERIMETER.s"
